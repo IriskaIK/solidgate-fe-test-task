@@ -1,0 +1,29 @@
+
+.order-details-card{
+    padding: 32px;
+    background-color: #F7F7F9;
+    border-radius: 8px;
+    width: 420px;
+    box-sizing: border-box;
+    height: max-content;
+}
+
+.order-details-card-title {
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 24px;
+    font-weight: 600;
+}
+
+.order-details-card-subtitle {
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.order-details-card-total-price{
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    display: flex;
+    justify-content: flex-end;
+}

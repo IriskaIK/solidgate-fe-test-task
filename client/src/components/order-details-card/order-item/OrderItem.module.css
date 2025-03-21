@@ -1,0 +1,17 @@
+
+.order-item {
+
+}
+
+.order-item-title {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.order-item-description {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    color: #797E8B;
+}

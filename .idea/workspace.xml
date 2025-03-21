@@ -1,11 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="b15c3be3-b311-479e-b007-38c0728cf93a" name="Changes" comment="" />
+    <list default="true" id="b15c3be3-b311-479e-b007-38c0728cf93a" name="Changes" comment="project setup">
+      <change afterPath="$PROJECT_DIR$/client/src/components/apple-pay-button/ApplePayButton.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/card-cvc-input/CardCvcInput.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/card-number-input/CardNumberInput.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/expiration-date-input/ExpirationDateInput.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/section-divider/SectionDivider.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/section-divider/SectionDivider.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/sumbit-button/SubmitButton.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/layouts/checkout-form-layout/CheckoutFormLayout.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/index.css" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="TypeScript File" />
+        <option value="TypeScript JSX File" />
+        <option value="CSS File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -24,6 +47,8 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "master",
+    "last_opened_file_path": "/home/pavlo/WebstormProjects/solidgate-test-task",
+    "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -49,11 +74,35 @@
       <option name="presentableId" value="Default" />
       <updated>1742548860108</updated>
       <workItem from="1742548861160" duration="47000" />
-      <workItem from="1742548912019" duration="322000" />
+      <workItem from="1742548912019" duration="1985000" />
     </task>
+    <task id="LOCAL-00001" summary="project setup">
+      <option name="closed" value="true" />
+      <created>1742549331054</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1742549331054</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="project setup" />
+    <option name="LAST_COMMIT_MESSAGE" value="project setup" />
   </component>
 </project>

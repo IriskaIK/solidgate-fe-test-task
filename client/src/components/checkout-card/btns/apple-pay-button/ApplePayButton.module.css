@@ -1,0 +1,11 @@
+.apple-pay-button {
+    width: 420px;
+    height: 48px;
+    border-radius: 3px;
+    background-color: #000000;
+    border: none;
+    padding: 0;
+    margin: 0;
+    cursor: pointer; /* Add pointer cursor on hover */
+    outline: none; /* Remove default focus outline */
+}

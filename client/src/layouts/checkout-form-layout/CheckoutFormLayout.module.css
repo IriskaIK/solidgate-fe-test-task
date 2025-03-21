@@ -1,0 +1,10 @@
+
+.checkout-container{
+    max-width: 1000px;
+    margin: auto;
+    padding: 0 64px;
+    background-color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+}
