@@ -1,0 +1,38 @@
+.checkout-form-title {
+    display: block;
+    width: min-content;
+    position: relative;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 40px;
+    cursor: pointer;
+
+}
+.return-arrow{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    position: absolute;
+    left: -25px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.return-text{
+    transition: all .2s ease-in;
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+.checkout-form-title:hover .return-text{
+    opacity: 1;
+    transform: translateY(0);
+
+}
+.checkout-form-title:hover .checkout-form-title-text{
+    opacity: 0;
+    transform: translateY(-20px);
+}
+.checkout-form-title-text{
+    transition: all .2s ease-in;
+
+}

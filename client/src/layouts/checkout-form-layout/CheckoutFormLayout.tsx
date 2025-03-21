@@ -2,12 +2,16 @@ import React from 'react'
 import styles from './CheckoutFormLayout.module.css'
 import CheckoutCard from "components/checkout-card/CheckoutCard.tsx";
 import OrderDetailsCard from "components/order-details-card/OrderDetailsCard.tsx";
+import LanguageSwitch from "components/language-switch/LanguageSwitch.tsx";
+import CheckoutFooter from "components/checkout-footer/CheckoutFooter.tsx";
 
 
-
-const CheckoutFormLayout : React.FC = () => {
+const CheckoutFormLayout: React.FC = () => {
     return (
-        <>
+        <div className={styles.wrapper}>
+
+            <LanguageSwitch/>
+
             <div className={styles.checkoutContainer}>
                 <CheckoutCard
                     offerTitle={'5 days free'}
@@ -23,13 +27,15 @@ const CheckoutFormLayout : React.FC = () => {
                     items={[
                         {
                             id: 1,
-                            title : 'Lamel Professional Smart Skin Compact Powder',
-                            subtitle : 'Пудра для обличчя'
+                            title: 'Lamel Professional Smart Skin Compact Powder',
+                            subtitle: 'Пудра для обличчя'
                         }
                     ]}
                 />
             </div>
-        </>
+
+            <CheckoutFooter/>
+        </div>
     )
 }
 

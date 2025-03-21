@@ -1,0 +1,10 @@
+
+.footer-container {
+    display: flex;
+    justify-content: center;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    color: #666C7B;
+    margin-bottom: 24px;
+}

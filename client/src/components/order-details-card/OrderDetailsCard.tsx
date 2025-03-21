@@ -3,8 +3,6 @@ import styles from './OrderDetailsCard.module.css'
 import SectionDivider from "components/section-divider/SectionDivider.tsx";
 import OrderItem from "components/order-details-card/order-item/OrderItem";
 
-console.log(styles)
-
 interface OrderItem {
     id: number;
     title: string;

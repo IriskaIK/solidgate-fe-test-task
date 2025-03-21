@@ -7,19 +7,30 @@ interface CheckoutFormInputProps {
     label?: string;
     type?: React.HTMLInputTypeAttribute;
     tooltip?: string;
+
+    onChange: (value: React.ChangeEvent<HTMLInputElement>) => void;
+    value: string;
+    errorMessage: string;
 }
 
-const CheckoutFormInput: React.FC<CheckoutFormInputProps> = ({placeholder, label, type, tooltip}) => {
+const CheckoutFormInput: React.FC<CheckoutFormInputProps> = ({placeholder, label, type, tooltip, onChange, value, errorMessage}) => {
     const [showTooltip, setShowTooltip] = useState<boolean>(false);
 
     return (
         <>
             <div>
-                <label htmlFor={label} className={styles.checkoutFormInputLabel}>
-                    {label}
+                <label htmlFor={label} className={`${errorMessage ? styles.errorText : ''} ${styles.checkoutFormInputLabel}`}>
+                    {label} {errorMessage ? `(${errorMessage})` : ''}
                 </label>
                 <div className={styles.inputWrapper}>
-                    <input type={type ? type : 'text'} className={styles.checkoutFormInput} placeholder={placeholder}/>
+                    <input
+                        type={type ? type : 'text'}
+                        className={`${styles.checkoutFormInput} ${errorMessage ? styles.errorBorder : ''}`}
+                        placeholder={placeholder}
+                        onChange={onChange}
+                        value={value}
+                        maxLength={19}
+                    />
                     {tooltip &&
                         (
                             <>
