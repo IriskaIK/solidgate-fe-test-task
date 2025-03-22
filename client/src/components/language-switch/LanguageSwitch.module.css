@@ -1,16 +1,14 @@
 
+
 .language-switch-container {
-    margin-right: 64px;
     display: flex;
     justify-content: flex-end;
-    margin-bottom: 8px;
 }
 
 .language-switch-button {
     all: unset;
     width: 40px;
     height: 40px;
-    padding: 8px;
     border-radius: 6px;
     transition: all .2s ease-in;
     text-align: center;
@@ -26,4 +24,45 @@
 
 .language-switch-button.selected:hover {
     background-color: #FFFFFF;
+}
+
+/* 360px - 452px */
+@media (min-width: 360px) and (max-width: 452px) {
+    .language-switch-container {
+        position: absolute;
+        right: 16px;
+    }
+
+    .language-switch-button.selected {
+        display: none;
+    }
+    .language-switch-button{
+        padding: 0;
+    }
+}
+
+@media (min-width: 453px) and (max-width: 999px) {
+    .language-switch-container {
+        position: absolute;
+        right: 16px;
+    }
+
+    .language-switch-button.selected {
+        display: none;
+    }
+    .language-switch-button{
+        padding: 0;
+    }
+
+}
+
+/* 1000px and above */
+@media (min-width: 1000px) {
+    .language-switch-container {
+        margin-right: 64px;
+        margin-bottom: 8px;
+    }
+    .language-switch-button{
+        padding: 8px;
+    }
 }

@@ -1,4 +1,8 @@
 
+/* 1000px and above */
+@media (min-width: 1000px) {
+
+}
 .grouped-inputs{
     margin-top: 12px;
     display: flex;

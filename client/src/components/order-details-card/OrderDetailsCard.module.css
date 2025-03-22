@@ -1,4 +1,8 @@
 
+/* 1000px and above */
+@media (min-width: 1000px) {
+
+}
 .order-details-card{
     padding: 32px;
     background-color: #F7F7F9;
@@ -26,4 +30,11 @@
     line-height: 24px;
     display: flex;
     justify-content: flex-end;
+}
+
+@media (min-width: 360px) and (max-width: 452px) {
+    .order-details-card{
+        width: 328px;
+
+    }
 }

@@ -1,8 +1,4 @@
-
 .checkout-container{
-    /*max-width: 1000px;*/
-    /*margin: auto;*/
-    padding: 0 64px;
     background-color: #FFFFFF;
 
     display: flex;
@@ -14,7 +10,49 @@
 .wrapper{
     background-color: #FFFFFF;
     box-sizing: border-box;
-    max-width: 1000px;
-    margin: 8px auto auto;
 
+}
+
+/* 360px - 452px */
+@media (min-width: 360px) and (max-width: 452px) {
+    .wrapper{
+        max-width: 328px;
+        margin: 20px auto auto;
+    }
+    .checkout-container{
+        padding: 0;
+
+        flex-direction: column;
+        gap: 32px;
+        margin-bottom: 32px;
+    }
+}
+
+/* 453px - 999px */
+@media (min-width: 453px) and (max-width: 999px) {
+    .checkout-container{
+        padding: 0;
+        background-color: #FFFFFF;
+
+        flex-direction: column;
+        gap: 32px;
+        margin-bottom: 32px;
+    }
+
+    .wrapper{
+        max-width: 420px;
+        margin: 16px auto auto;
+    }
+}
+
+/* 1000px and above */
+@media (min-width: 1000px) {
+    .checkout-container{
+        padding: 0 64px;
+    }
+
+    .wrapper{
+        max-width: 1000px;
+        margin: 0 auto auto;
+    }
 }

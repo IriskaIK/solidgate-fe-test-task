@@ -1,4 +1,10 @@
 
+/* 1000px and above */
+@media (min-width: 1000px) {
+
+}
+
+
 .footer-container {
     display: flex;
     justify-content: center;

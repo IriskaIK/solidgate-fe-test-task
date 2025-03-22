@@ -4,7 +4,6 @@ import ApplePayButton from "components/checkout-card/btns/apple-pay-button/Apple
 import SectionDivider from "components/section-divider/SectionDivider.tsx";
 import CheckoutForm from "components/checkout-card/forms/checkout-form/CheckoutForm.tsx";
 import CheckoutCardFooter from "components/checkout-card/footer/CheckoutCardFooter.tsx";
-import returnArrow from "assets/return-arrow.svg"
 import BackButton from "components/checkout-card/btns/back-button/BackButton.tsx";
 
 interface CheckoutFormProps {

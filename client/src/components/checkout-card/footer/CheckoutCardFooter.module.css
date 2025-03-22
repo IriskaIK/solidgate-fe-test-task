@@ -1,4 +1,10 @@
 
+
+/* 1000px and above */
+@media (min-width: 1000px) {
+
+}
+
 .checkout-card-footer{
     padding: 12px 16px;
     font-size: 12px;

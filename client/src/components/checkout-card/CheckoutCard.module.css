@@ -1,8 +1,55 @@
-.checkout-form{
-    width: 420px;
+
+
+@media (min-width: 360px) and (max-width: 452px) {
+    .checkout-form-offer-content{
+        text-align: center;
+    }
+    .checkout-form-offer-title{
+        font-size: 24px;
+        line-height: 32px;
+
+    }
+
+    .checkout-form-offer-subtitle{
+        font-size: 14px;
+        line-height: 20px;
+    }
 }
 
 
+/* 453px - 999px */
+@media (min-width: 453px) and (max-width: 999px){
+    .checkout-form-offer-content{
+        text-align: center;
+    }
+    .checkout-form-offer-title{
+        font-size: 24px;
+        line-height: 32px;
+
+    }
+
+    .checkout-form-offer-subtitle{
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+}
+
+/* 1000px and above */
+@media (min-width: 1000px) {
+    .checkout-form-offer-title {
+        font-size: 32px;
+        line-height: 40px;
+    }
+    .checkout-form-offer-subtitle{
+        font-size: 16px;
+        line-height: 24px;
+    }
+}
+
+.checkout-form{
+    width: 420px;
+}
 
 .checkout-form-offer-content{
     margin-top: 16px;
@@ -10,17 +57,20 @@
 }
 
 .checkout-form-offer-title {
-    font-size: 32px;
     font-weight: 600;
-    line-height: 40px;
 }
 
 .checkout-form-offer-subtitle {
     font-weight: 500;
-    font-size: 16px;
-    line-height: 24px;
+
 }
 
 .footer{
     margin-top: 8px;
+}
+
+@media (min-width: 360px) and (max-width: 452px) {
+    .checkout-form{
+        width: 328px;
+    }
 }

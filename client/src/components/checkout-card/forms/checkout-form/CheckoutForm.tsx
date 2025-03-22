@@ -28,8 +28,8 @@ const CheckoutForm : React.FC<CheckoutFormProps> = ({price, currency}) =>{
     const [processing, setProcessing] = useState<boolean>(false);
 
     const onCardNumberChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-        let rawValue = e.target.value.replace(/\D/g, "").slice(0, 16); // Allow only digits, max 16
-        let formattedValue = formatCardNumber(rawValue);
+        const rawValue = e.target.value.replace(/\D/g, "").slice(0, 16); // Allow only digits, max 16
+        const formattedValue = formatCardNumber(rawValue);
 
         setCardNumber(formattedValue);
         setCardNumberValidationError(validateCardNumber(rawValue) ? "" : "Invalid card number");
