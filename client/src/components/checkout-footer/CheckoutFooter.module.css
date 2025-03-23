@@ -4,6 +4,6 @@
     font-size: 14px;
     font-weight: 500;
     line-height: 20px;
-    color: #666C7B;
+    color: var(--secondary-text-color);
     margin-bottom: 24px;
 }

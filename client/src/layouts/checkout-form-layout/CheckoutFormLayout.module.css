@@ -1,5 +1,5 @@
 .checkout-container{
-    background-color: #FFFFFF;
+    background-color: var(--main-bg-color);
 
     display: flex;
     justify-content: center;
@@ -8,7 +8,7 @@
 }
 
 .wrapper{
-    background-color: #FFFFFF;
+    background-color: var(--main-bg-color);
     box-sizing: border-box;
 
 }
@@ -32,7 +32,7 @@
 @media (min-width: 453px) and (max-width: 999px) {
     .checkout-container{
         padding: 0;
-        background-color: #FFFFFF;
+        background-color: var(--main-bg-color);
 
         flex-direction: column;
         gap: 32px;

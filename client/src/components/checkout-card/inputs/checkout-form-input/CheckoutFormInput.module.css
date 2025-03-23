@@ -20,7 +20,7 @@
 }
 
 .checkout-form-input-label {
-    color: #666C7B;
+    color: var(--secondary-text-color);
     line-height: 16px;
     font-weight: 500;
     font-size: 12px;
@@ -39,7 +39,7 @@
 .tooltip{
     position: absolute;
     top: -100%;
-    background-color: #F7F7F9;
+    background-color: var(--secondary-bg-color);
     border-radius: 10px;
     padding: 10px;
     font-size: 14px;

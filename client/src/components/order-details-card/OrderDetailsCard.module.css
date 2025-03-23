@@ -1,6 +1,6 @@
 .order-details-card{
     padding: 32px;
-    background-color: #F7F7F9;
+    background-color: var(--secondary-bg-color);
     border-radius: 8px;
     width: 420px;
     box-sizing: border-box;

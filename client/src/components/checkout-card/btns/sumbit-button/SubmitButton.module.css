@@ -3,7 +3,7 @@
     font-weight: 600;
     line-height: 24px;
     background-color: #028837;
-    color: #FFFFFF;
+    color: var(--main-bg-color);
 
 
     position: relative;

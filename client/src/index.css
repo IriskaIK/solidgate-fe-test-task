@@ -1,13 +1,21 @@
+:root{
+    --main-bg-color : #FFFFFF;
+    --secondary-bg-color : #F7F7F9;
+
+    --primary-text-color : #363A43;
+    --secondary-text-color : #666C7B;
+
+    --selected-color : #B0B4BE;
+    --divider-line-color: #E0E2EA;
+}
+
 
 body {
     margin: 0;
-    /*display: flex;*/
-    /*place-items: center;*/
     min-width: 320px;
     min-height: 100vh;
-    /*background-color: #D9D9D9;*/
     font-family: "Inter", sans-serif;
-    color: #363A43;
+    color: var(--primary-text-color);
 }
 
 p{

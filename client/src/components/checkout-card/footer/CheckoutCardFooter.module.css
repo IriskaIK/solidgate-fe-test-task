@@ -5,5 +5,5 @@
     font-weight: 400;
     border-radius: 8px;
     border: 1px solid #E4E6EC;
-    color : #666C7B;
+    color : var(--secondary-text-color);
 }
