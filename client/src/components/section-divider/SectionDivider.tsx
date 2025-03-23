@@ -6,7 +6,7 @@ interface SectionDividerProps {
     mb?: string;
 }
 
-const SectionDivider: React.FC<SectionDividerProps> = (
+const SectionDivider: React.FC<SectionDividerProps> = React.memo((
     {
         title,
         mt = "16px",
@@ -27,6 +27,6 @@ const SectionDivider: React.FC<SectionDividerProps> = (
         </div>
     )
 
-}
+});
 
 export default SectionDivider;

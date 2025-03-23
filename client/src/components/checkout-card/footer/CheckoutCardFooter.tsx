@@ -5,7 +5,7 @@ interface CheckoutCardFooterProps {
     children : React.ReactNode
 }
 
-const CheckoutCardFooter : React.FC<CheckoutCardFooterProps> = ({children}) => {
+const CheckoutCardFooter : React.FC<CheckoutCardFooterProps> = React.memo(({children}) => {
     return (
         <div className={styles.checkoutCardFooter}>
             <p>
@@ -13,6 +13,6 @@ const CheckoutCardFooter : React.FC<CheckoutCardFooterProps> = ({children}) => {
             </p>
         </div>
     )
-}
+});
 
 export default CheckoutCardFooter;

@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./LanguageSwitch.module.css";
 
-const LanguageSwitch : React.FC = () => {
+const LanguageSwitch : React.FC = React.memo(() => {
     return (
         <div className={styles.languageSwitchContainer}>
             <button className={`${styles.languageSwitchButton} ${styles.selected}`}>
@@ -13,6 +13,6 @@ const LanguageSwitch : React.FC = () => {
 
         </div>
     )
-}
+});
 
 export default LanguageSwitch;

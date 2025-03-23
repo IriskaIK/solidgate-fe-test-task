@@ -4,9 +4,29 @@ import CheckoutCard from "components/checkout-card/CheckoutCard.tsx";
 import OrderDetailsCard from "components/order-details-card/OrderDetailsCard.tsx";
 import LanguageSwitch from "components/language-switch/LanguageSwitch.tsx";
 import CheckoutFooter from "components/checkout-footer/CheckoutFooter.tsx";
+import {IOrderItem} from "types/orderItem.type.ts";
+
+interface CheckoutFormLayoutProps {
+    offerTitle: string,
+    offerSubtitle: string,
+    price: number,
+    currency: string,
+
+    orderTitle: string,
+    orderDescription: string,
+    items: IOrderItem[]
+}
 
 
-const CheckoutFormLayout: React.FC = () => {
+const CheckoutFormLayout: React.FC<CheckoutFormLayoutProps> = React.memo(({
+                                                                   offerTitle,
+                                                                   offerSubtitle,
+                                                                   price,
+                                                                   currency,
+                                                                   orderTitle,
+                                                                   orderDescription,
+                                                                   items
+                                                               }) => {
     return (
         <div className={styles.wrapper}>
 
@@ -14,29 +34,23 @@ const CheckoutFormLayout: React.FC = () => {
 
             <div className={styles.checkoutContainer}>
                 <CheckoutCard
-                    offerTitle={'5 days free'}
-                    offerSubtitle={'then 299.99 UAH per 14 days'}
-                    price={299.99}
-                    currency={'UAH'}
+                    offerTitle={offerTitle}
+                    offerSubtitle={offerSubtitle}
+                    price={price}
+                    currency={currency}
                 />
                 <OrderDetailsCard
-                    title={'Order info <= 100 char.'}
-                    description={'Description <= 400 char.'}
-                    totalPrice={299.99}
-                    currency={'UAH'}
-                    items={[
-                        {
-                            id: 1,
-                            title: 'Lamel Professional Smart Skin Compact Powder',
-                            subtitle: 'Пудра для обличчя'
-                        }
-                    ]}
+                    title={orderTitle}
+                    description={orderDescription}
+                    totalPrice={price}
+                    currency={currency}
+                    items={items}
                 />
             </div>
 
             <CheckoutFooter/>
         </div>
     )
-}
+});
 
 export default CheckoutFormLayout;

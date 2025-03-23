@@ -45,6 +45,7 @@ const CheckoutForm: React.FC<CheckoutFormProps> = ({ price, currency }) => {
                     onChange: (e) => setValue("cardNumber", formatCardNumber(e.target.value)),
                 })}
                 errorMessage={errors.cardNumber?.message || ""}
+                autoComplete='cc-number'
             />
 
             <div className={styles.groupedInputs}>
@@ -57,6 +58,8 @@ const CheckoutForm: React.FC<CheckoutFormProps> = ({ price, currency }) => {
                         onChange: (e) => setValue('expirationDate', formatExpirationDate(e.target.value)),
                     })}
                     errorMessage={errors.expirationDate?.message || ""}
+                    autoComplete='cc-exp'
+
                 />
 
                 <CheckoutFormInput
@@ -70,6 +73,7 @@ const CheckoutForm: React.FC<CheckoutFormProps> = ({ price, currency }) => {
                         onChange: (e) => setValue("cardCVC", formatCardCVC(e.target.value)),
                     })}
                     errorMessage={errors.cardCVC?.message || ""}
+                    autoComplete='cc-csc'
                 />
             </div>
 
