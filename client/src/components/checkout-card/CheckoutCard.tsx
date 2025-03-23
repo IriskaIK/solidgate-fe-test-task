@@ -5,6 +5,7 @@ import SectionDivider from "components/section-divider/SectionDivider.tsx";
 import CheckoutForm from "components/checkout-card/forms/checkout-form/CheckoutForm.tsx";
 import CheckoutCardFooter from "components/checkout-card/footer/CheckoutCardFooter.tsx";
 import BackButton from "components/checkout-card/btns/back-button/BackButton.tsx";
+import {useTranslation} from "react-i18next";
 
 interface CheckoutFormProps {
     offerTitle: string,
@@ -14,6 +15,8 @@ interface CheckoutFormProps {
 }
 
 const CheckoutCard: React.FC<CheckoutFormProps> = ({offerTitle, offerSubtitle, price, currency}) => {
+    const { t } = useTranslation();
+
     return (
         <div className={styles.checkoutForm}>
 
@@ -29,7 +32,7 @@ const CheckoutCard: React.FC<CheckoutFormProps> = ({offerTitle, offerSubtitle, p
             </div>
 
             <ApplePayButton/>
-            <SectionDivider title={'or pay with card'} mt={'24px'} mb={'16px'}/>
+            <SectionDivider title={t('payWithCard')} mt={'24px'} mb={'16px'}/>
 
             <CheckoutForm price={price} currency={currency}/>
 
