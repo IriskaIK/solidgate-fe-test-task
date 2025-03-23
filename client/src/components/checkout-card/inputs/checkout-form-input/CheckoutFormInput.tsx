@@ -1,58 +1,48 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 import styles from "./CheckoutFormInput.module.css";
-import tooltipIcon from 'assets/info-icon.svg'
+import tooltipIcon from 'assets/info-icon.svg';
 
-interface CheckoutFormInputProps {
+interface CheckoutFormInputProps extends React.InputHTMLAttributes<HTMLInputElement> {
     placeholder?: string;
     label?: string;
-    type?: React.HTMLInputTypeAttribute;
     tooltip?: string;
-
-    onChange: (value: React.ChangeEvent<HTMLInputElement>) => void;
-    value: string;
-    errorMessage: string;
+    errorMessage?: string;
 }
 
-const CheckoutFormInput: React.FC<CheckoutFormInputProps> = ({placeholder, label, type, tooltip, onChange, value, errorMessage}) => {
-    const [showTooltip, setShowTooltip] = useState<boolean>(false);
+const CheckoutFormInput = React.forwardRef<HTMLInputElement, CheckoutFormInputProps>(
+    ({ placeholder, label, type = "text", tooltip, errorMessage, ...rest }, ref) => {
+        const [showTooltip, setShowTooltip] = useState<boolean>(false);
 
-    return (
-        <>
+        return (
             <div>
-                <label htmlFor={label} className={`${errorMessage ? styles.errorText : ''} ${styles.checkoutFormInputLabel}`}>
+                <label className={`${errorMessage ? styles.errorText : ''} ${styles.checkoutFormInputLabel}`}>
                     {label} {errorMessage ? `(${errorMessage})` : ''}
                 </label>
                 <div className={styles.inputWrapper}>
                     <input
-                        type={type ? type : 'text'}
+                        ref={ref}
+                        type={type}
                         className={`${styles.checkoutFormInput} ${errorMessage ? styles.errorBorder : ''}`}
                         placeholder={placeholder}
-                        onChange={onChange}
-                        value={value}
                         maxLength={19}
+                        {...rest}
                     />
-                    {tooltip &&
-                        (
-                            <>
-                                <img
-                                    className={styles.tooltipButton}
-                                    onMouseEnter={() => setShowTooltip(true)}
-                                    onMouseLeave={() => setShowTooltip(false)}
-                                    src={tooltipIcon} alt={'info'}/>
-                                {showTooltip && (
-                                    <div className={styles.tooltip}>
-                                        {tooltip}
-                                    </div>
-                                )}
-                            </>
-
-                        )
-                    }
+                    {tooltip && (
+                        <>
+                            <img
+                                className={styles.tooltipButton}
+                                onMouseEnter={() => setShowTooltip(true)}
+                                onMouseLeave={() => setShowTooltip(false)}
+                                src={tooltipIcon}
+                                alt="info"
+                            />
+                            {showTooltip && <div className={styles.tooltip}>{tooltip}</div>}
+                        </>
+                    )}
                 </div>
-
             </div>
-        </>
-    )
-}
+        );
+    }
+);
 
 export default CheckoutFormInput;

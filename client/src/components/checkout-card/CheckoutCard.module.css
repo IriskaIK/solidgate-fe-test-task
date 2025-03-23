@@ -1,5 +1,3 @@
-
-
 @media (min-width: 360px) and (max-width: 452px) {
     .checkout-form-offer-content{
         text-align: center;
@@ -15,7 +13,6 @@
         line-height: 20px;
     }
 }
-
 
 /* 453px - 999px */
 @media (min-width: 453px) and (max-width: 999px){

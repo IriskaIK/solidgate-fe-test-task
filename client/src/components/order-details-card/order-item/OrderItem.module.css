@@ -1,13 +1,3 @@
-
-
-/* 1000px and above */
-@media (min-width: 1000px) {
-
-}
-.order-item {
-
-}
-
 .order-item-title {
     font-weight: 500;
     font-size: 14px;

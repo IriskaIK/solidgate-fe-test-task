@@ -8,18 +8,15 @@ interface OrderItemProps {
 
 const OrderItem : React.FC<OrderItemProps> = ({title, subtitle}) => {
     return (
-        <>
-            <div className={styles.orderItem}>
-                <p className={styles.orderItemTitle}>
-                    {title}
-                </p>
+        <div className={styles.orderItem}>
+            <p className={styles.orderItemTitle}>
+                {title}
+            </p>
 
-                <p className={styles.orderItemDescription}>
-                    {subtitle}
-                </p>
-            </div>
-
-        </>
+            <p className={styles.orderItemDescription}>
+                {subtitle}
+            </p>
+        </div>
     )
 }
 
