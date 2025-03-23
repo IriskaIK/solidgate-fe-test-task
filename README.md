@@ -8,6 +8,8 @@ This project is a frontend implementation of a payment page for Solidgate's test
 - **TypeScript**
 - **CSS** for styling
 - **Client-side form validation**
+- **Multi-language support**(i18n)
+- **React-hook-form**
 - **Adaptive design** (implemented)
 
 ## Features
