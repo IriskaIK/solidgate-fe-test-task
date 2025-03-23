@@ -24,6 +24,7 @@ const CheckoutForm: React.FC<CheckoutFormProps> = ({ price, currency }) => {
         handleSubmit,
         setValue,
         formState: { errors },
+        reset
     } = useForm<FormData>();
     const [processing, setProcessing] = useState(false);
     const onSubmit = (data: FormData) => {
@@ -31,6 +32,7 @@ const CheckoutForm: React.FC<CheckoutFormProps> = ({ price, currency }) => {
         setTimeout(()=>{
             alert(`Payment successful!\nCard: ${data.cardNumber}\nCVC: ${data.cardCVC}\nExpiration: ${data.expirationDate}`);
             setProcessing(false)
+            reset()
         }, 3000)
     };
 
